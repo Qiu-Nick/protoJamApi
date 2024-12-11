@@ -1,76 +1,304 @@
 {
-	"sites": [
-		{
-			"id": "1",
-			"nom": "Goutte",
-			"type": "Eau",
-			"densité": "60",
-			"ressources": "40",
-			"danger_alentour": "14"
-		},
-		{
-			"id": "2",
-			"nom": "Source",
-			"type": "Eau",
-			"densité": "70",
-			"ressources": "50",
-			"danger_alentour": "10"
-		},
-		{
-			"id": "3",
-			"nom": "Puit",
-			"type": "Eau",
-			"densité": "80",
-			"ressources": "60",
-			"danger_alentour": "20"
-		},
-		{
-			"id": "4",
-			"nom": "Bunker Alpha",
-			"type": "Bunker",
-			"densité": "50",
-			"ressources": "70",
-			"danger_alentour": "30"
-		},
-		{
-			"id": "5",
-			"nom": "Bunker Bravo",
-			"type": "Bunker",
-			"densité": "55",
-			"ressources": "75",
-			"danger_alentour": "25"
-		},
-		{
-			"id": "6",
-			"nom": "Bunker Charlie",
-			"type": "Bunker",
-			"densité": "60",
-			"ressources": "80",
-			"danger_alentour": "35"
-		},
-		{
-			"id": "7",
-			"nom": "Bunker Delta",
-			"type": "Bunker",
-			"densité": "65",
-			"ressources": "85",
-			"danger_alentour": "40"
-		},
-		{
-			"id": "8",
-			"nom": "Station Électrique 1",
-			"type": "Electricité",
-			"densité": "90",
-			"ressources": "95",
-			"danger_alentour": "5"
-		},
-		{
-			"id": "9",
-			"nom": "Station Électrique 2",
-			"type": "Electricité",
-			"densité": "85",
-			"ressources": "90",
-			"danger_alentour": "10"
-		}
-	]
+  "wines": [
+    {
+      "id": 1,
+      "name": "Château Margaux",
+      "description": "Un grand cru classique de Bordeaux, réputé pour son équilibre et sa complexité.",
+      "price": 750
+    },
+    {
+      "id": 2,
+      "name": "Domaine de la Romanée-Conti",
+      "description": "Vin mythique de Bourgogne, offrant une profondeur exceptionnelle.",
+      "price": 18000
+    },
+    {
+      "id": 3,
+      "name": "Pétrus",
+      "description": "Un vin légendaire de Pomerol, riche et voluptueux.",
+      "price": 3000
+    },
+    {
+      "id": 4,
+      "name": "Sassicaia",
+      "description": "Super Toscan de renom, avec une belle structure tannique.",
+      "price": 250
+    },
+    {
+      "id": 5,
+      "name": "Opus One",
+      "description": "Cuvée prestigieuse de Californie, alliant puissance et finesse.",
+      "price": 400
+    },
+    {
+      "id": 6,
+      "name": "Châteauneuf-du-Pape",
+      "description": "Vin rouge robuste du Rhône, connu pour ses arômes épicés.",
+      "price": 50
+    },
+    {
+      "id": 7,
+      "name": "Barolo",
+      "description": "Vin italien élégant et tannique, souvent appelé le 'roi des vins'.",
+      "price": 80
+    },
+    {
+      "id": 8,
+      "name": "Amarone della Valpolicella",
+      "description": "Vin intense et velouté, avec des notes de fruits confits.",
+      "price": 65
+    },
+    {
+      "id": 9,
+      "name": "Grange",
+      "description": "Vin iconique australien, reconnu pour sa richesse et sa longévité.",
+      "price": 700
+    },
+    {
+      "id": 10,
+      "name": "Riesling Trocken",
+      "description": "Un vin blanc sec allemand, réputé pour son acidité vibrante.",
+      "price": 30
+    },
+    {
+      "id": 11,
+      "name": "Malbec Argentin",
+      "description": "Rouge corsé avec des arômes de prune et de chocolat.",
+      "price": 20
+    },
+    {
+      "id": 12,
+      "name": "Pouilly-Fumé",
+      "description": "Blanc sec de Loire, caractérisé par des notes fumées.",
+      "price": 25
+    },
+    {
+      "id": 13,
+      "name": "Cava",
+      "description": "Vin effervescent espagnol, une alternative au champagne.",
+      "price": 15
+    },
+    {
+      "id": 14,
+      "name": "Champagne Dom Pérignon",
+      "description": "Un champagne de prestige aux bulles fines et à la saveur complexe.",
+      "price": 200
+    },
+    {
+      "id": 15,
+      "name": "Rosé de Provence",
+      "description": "Vin frais et fruité idéal pour l'été.",
+      "price": 18
+    },
+    {
+      "id": 16,
+      "name": "Shiraz Australien",
+      "description": "Vin puissant aux notes d'épices et de fruits noirs.",
+      "price": 22
+    },
+    {
+      "id": 17,
+      "name": "Sauternes",
+      "description": "Vin liquoreux français, parfait pour les desserts.",
+      "price": 45
+    },
+    {
+      "id": 18,
+      "name": "Gewurztraminer",
+      "description": "Vin blanc aromatique d'Alsace, aux notes florales et épicées.",
+      "price": 30
+    },
+    {
+      "id": 19,
+      "name": "Corton-Charlemagne",
+      "description": "Grand cru de Bourgogne, riche et complexe.",
+      "price": 150
+    },
+    {
+      "id": 20,
+      "name": "Zinfandel",
+      "description": "Rouge américain fruité et épicé.",
+      "price": 28
+    },
+    {
+      "id": 21,
+      "name": "Tavel",
+      "description": "Rosé corsé du Rhône, idéal avec les plats relevés.",
+      "price": 25
+    },
+    {
+      "id": 22,
+      "name": "Prosecco",
+      "description": "Vin effervescent italien, doux et fruité.",
+      "price": 12
+    },
+    {
+      "id": 23,
+      "name": "Chianti Classico",
+      "description": "Vin rouge toscan aux notes de cerise et d'épices.",
+      "price": 35
+    },
+    {
+      "id": 24,
+      "name": "Réserve Saint-Estèphe",
+      "description": "Rouge bordelais structé et élégant.",
+      "price": 60
+    },
+    {
+      "id": 25,
+      "name": "Beaujolais Nouveau",
+      "description": "Vin rouge léger et fruité, idéal pour les occasions décontractées.",
+      "price": 10
+    },
+    {
+      "id": 26,
+      "name": "Cabernet Sauvignon",
+      "description": "Un classique mondial, riche en tanins avec des notes de cassis.",
+      "price": 40
+    },
+    {
+      "id": 27,
+      "name": "Merlot",
+      "description": "Vin rouge souple et rond, aux arômes de fruits rouges.",
+      "price": 25
+    },
+    {
+      "id": 28,
+      "name": "Syrah du Rhône",
+      "description": "Rouge épicé et puissant, idéal avec les viandes grillées.",
+      "price": 30
+    },
+    {
+      "id": 29,
+      "name": "Pinot Noir",
+      "description": "Vin rouge élégant et subtil, originaire de Bourgogne.",
+      "price": 50
+    },
+    {
+      "id": 30,
+      "name": "Verdicchio",
+      "description": "Blanc italien frais et citronné, parfait avec les fruits de mer.",
+      "price": 18
+    },
+    {
+      "id": 31,
+      "name": "Viognier",
+      "description": "Blanc aux arômes d'abricot et de fleurs, provenant de la Vallée du Rhône.",
+      "price": 35
+    },
+    {
+      "id": 32,
+      "name": "Carignan",
+      "description": "Vin rouge rustique du sud de la France, riche et fruité.",
+      "price": 22
+    },
+    {
+      "id": 33,
+      "name": "Muscat",
+      "description": "Vin doux et floral, idéal avec les desserts.",
+      "price": 15
+    },
+    {
+      "id": 34,
+      "name": "Albariño",
+      "description": "Blanc espagnol vif, avec des arômes d'agrumes.",
+      "price": 28
+    },
+    {
+      "id": 35,
+      "name": "Grenache",
+      "description": "Rouge généreux avec des notes de fruits rouges et de poivre.",
+      "price": 20
+    },
+    {
+      "id": 36,
+      "name": "Chenin Blanc",
+      "description": "Blanc de la Vallée de la Loire, offrant une belle minéralité.",
+      "price": 25
+    },
+    {
+      "id": 37,
+      "name": "Tempranillo",
+      "description": "Rouge espagnol riche et épicé, typique de la région de la Rioja.",
+      "price": 30
+    },
+    {
+      "id": 38,
+      "name": "Vin Jaune",
+      "description": "Vin unique du Jura, avec des arômes de noix et une belle longévité.",
+      "price": 75
+    },
+    {
+      "id": 39,
+      "name": "Globule Blanc",
+      "description": "Un grand cru classique de Bordeaux, réputé pour son équilibre et sa complexité.",
+      "price": 750
+    },
+    {
+      "id": 40,
+      "name": "Globule Rouge",
+      "description": "Vin mythique de Bourgogne, offrant une profondeur exceptionnelle.",
+      "price": 18000
+    },
+    {
+      "id": 41,
+      "name": "L'échapée",
+      "description": "Vin 100% Grolleau, fruité et épicé, parfait avec des plats savoureux.",
+      "price": 3000
+    },
+    {
+      "id": 42,
+      "name": "Somnambule",
+      "description": "Vin 90% Cabernet Franc, souple et rond, aux arômes de fruits rouges.",
+      "price": 250
+    },
+    {
+      "id": 43,
+      "name": "L'âme de fond",
+      "description": "Vin 100% Chenin, dense et minéral, aux notes de fruits blancs.",
+      "price": 400
+    },
+    {
+      "id": 44,
+      "name": "Cocagne",
+      "description": "Vin 100% Grolleau, fruité et épicé.",
+      "price": 50
+    },
+    {
+      "id": 45,
+      "name": "Contact",
+      "description": "Vin 100% Chenin, puissant et fruité, idéal avec canard à l’orange ou Saint-Jacques.",
+      "price": 80
+    },
+    {
+      "id": 46,
+      "name": "Révolution",
+      "description": "Vin 100% Pineau d’Aunis, souple et épicé, aux arômes de poivre blanc et fruits rouges.",
+      "price": 65
+    },
+    {
+      "id": 47,
+      "name": "Ô Temps Suspend Ton Vol Blanc",
+      "description": "Assez loin des traditionnels crémants de Loire, c'est d'ailleurs un 'Vin de France' très original.",
+      "price": 700
+    },
+    {
+      "id": 48,
+      "name": "Chocolate in a Bottle CHARDONNAY",
+      "description": "Chocolate in a Bottle est un vin blanc pétillant et gourmand du sud de la France",
+      "price": 30
+    },
+    {
+      "id": 49,
+      "name": "Sauvignon Blanc Lablachère",
+      "description": "Ce vin blanc très aromatique à la robe brillante et limpide accompagnera les poissons et crustacés.",
+      "price": 20
+    },
+    {
+      "id": 50,
+      "name": "Le Merlot",
+      "description": "Rouge fruit noir et mûre, tannins puissants",
+      "price": 25
+    }
+  ]
 }
